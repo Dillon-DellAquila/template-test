@@ -57,7 +57,7 @@ body:
         - Recurring Reporting
         - Request
         - Other
-    validations:
+   validations:
       required: true
   - type: input
     id: type_other
