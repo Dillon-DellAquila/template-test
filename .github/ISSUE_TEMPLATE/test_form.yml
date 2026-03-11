@@ -1,11 +1,6 @@
 name: Issue Form
 description: Please fill out this form to submit an issue
 body:
-  - type: markdown
-    attributes:
-      value: >
-        Thanks for taking the time to fill out this issue. Please complete the
-        form below to the best of your abilities
   - type: input
     id: duedate
     attributes:
@@ -15,10 +10,11 @@ body:
       placeholder: 12/31/9999
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: internal_external
     attributes:
       label: Did this request come from or is it for someone outside of the Finance team?
+      multiple: false
       options:
         - label: Yes (External Request)
         - label: No (Internal Request)
