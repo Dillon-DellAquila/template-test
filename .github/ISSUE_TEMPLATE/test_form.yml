@@ -5,7 +5,7 @@ body:
     id: duedate
     attributes:
       label: Due Date
-      description: Please enter your best estimate for when you expect/need this issue to be resolved. _(Please enter in date format MM/DD/YYYY)_
+      description: Please enter your best estimate for when you expect/need this issue to be resolved.  <br /> _(Please enter in date format MM/DD/YYYY)_
       placeholder: 12/31/9999
     validations:
       required: true
