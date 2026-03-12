@@ -1,6 +1,5 @@
 name: Issue Form
 description: Please fill out this form to submit an issue
-Assignees: @Dillon-DellAquila
 body:
   - type: input
     id: duedate
