@@ -26,17 +26,17 @@ body:
       description: Please select which workstreams are involved in this issue
       multiple: true
       options:
-        - Sigma
-        - Domo
-        - Delphi
+        - Agency
         - Branch Claims Model
+        - Delphi
+        - Domo
+        - Ember
+        - Expense Forecasting
         - Forecasting/Planning
         - Investor Relations
-        - Regulatory
-        - Expense Forecasting
         - Metric Reporting
-        - Ember
-        - Agency
+        - Regulatory
+        - Sigma
         - Other, please list in the next section
     validations:
       required: true
