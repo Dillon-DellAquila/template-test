@@ -1,0 +1,23 @@
+name: Form Suggestions
+description: Please fill out this form to submit an update to the Form Template
+Label: Issue Form Suggestion
+Assignee: @Dillon-DellAquila
+body:
+  - type: dropdown
+    id: Suggestion_Type
+    attributes:
+      label: Is this an addition or fixing an existing issue?
+      multiple: false
+      options:
+        - New Feature
+        - Existing Issue
+    validations:
+      required: true
+    - type: textarea
+       id: description
+    attributes:
+      label: Description
+      placeholder: Please add a brief description of the work that needs to be done
+    validations:
+      required: true
+      
