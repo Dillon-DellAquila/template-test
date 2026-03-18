@@ -1,7 +1,6 @@
 name: Form Suggestions
 description: Please fill out this form to submit an update to the Form Template
-Label: ["Issue Form Suggestion"]
-Assignee: 
+assignees: 
   - Dillon-DellAquila
 body:
   - type: dropdown
