@@ -13,11 +13,11 @@ body:
         - Existing Issue
     validations:
       required: true
-    - type: textarea
-      id: description
-      attributes:
-        label: Description
-        placeholder: Please add a brief description of the work that needs to be done
-      validations:
-        required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: Please add a brief description of the work that needs to be done
+    validations:
+      required: true
       
