@@ -16,7 +16,7 @@ body:
       - Backlog (no set duedate, use to keep track of ongoing tasks)
     validations:
       required: true
-   - type: dropdown
+  - type: dropdown
     id: workstream_to
     attributes:
       label: Workstream
