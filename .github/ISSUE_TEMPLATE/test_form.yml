@@ -11,8 +11,9 @@ body:
       options:
         - Urgent (Needs to be done today)
         - High (Within the next couple days)
-        - Medium (Withing the month)
-        - Low (Can be added to backlog, no strict due date)
+        - Medium (Withing the week)
+        - Low (within the month)
+        - Backlog (no set duedate, use to keep track of ongoing tasks)
     validations:
       required: true
   - type: dropdown
