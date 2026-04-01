@@ -16,11 +16,29 @@ body:
         - Backlog (no set duedate, use to keep track of ongoing tasks)
     validations:
       required: true
-  - type: dropdown
-    id: workstream
+   - type: dropdown
+    id: workstream_to
     attributes:
       label: Workstream
-      description: Please select which workstreams are involved in this issue
+      description: Please select the team that will be working on this issue
+      multiple: true
+      options:
+       - FP&A
+       - Expense Management
+       - Capital Management
+       - Investor Relations
+       - Product
+       - Business Insights
+       - Sigma
+       - Claims
+       - Ember
+    validation:
+      required: true
+  - type: dropdown
+    id: workstream_from
+    attributes:
+      label: Workstream
+      description: Please select which workstream is requesting this issue
       multiple: true
       options:
         - Agency
