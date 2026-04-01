@@ -1,6 +1,7 @@
 name: External Issue Form
 description: Please fill out this form to file an issue that was raised by an **external** staekholder.
-assignee: @Dillon-DellAquila
+assignees: 
+  - Dillon-DellAquila
 body:
   - type: Dropdown
     id: Priority
