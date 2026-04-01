@@ -4,16 +4,15 @@ assignees:
   - Dillon-DellAquila
 body:
   - type: dropdown
-    id: Priority
+    id: internal_external
     attributes:
-    label: Priority
-    description: Please select a priority for this issue
-    multiple: false
-    options:
-      - Urgent (Needs to be done today)
-      - High (Within the next couple days)
-      - Medium (Withing the month)
-      - Low (Can be added to backlog, no strict due date)
+      label: Did this request come from or is it for someone outside of the Finance team?
+      multiple: false
+      options:
+        - Urgent (Needs to be done today)
+        - High (Within the next couple days)
+        - Medium (Withing the month)
+        - Low (Can be added to backlog, no strict due date)
     validations:
       required: true
   - type: dropdown
