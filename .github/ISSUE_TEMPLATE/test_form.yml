@@ -3,7 +3,7 @@ description: Please fill out this form to file an issue that was raised by an **
 assignees: 
   - Dillon-DellAquila
 body:
-  - type: Dropdown
+  - type: dropdown
     id: Priority
     attributes:
     options:
