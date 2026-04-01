@@ -9,11 +9,11 @@ body:
       label: Select the priority of this issue
       multiple: false
       options:
-        - Urgent (Needs to be done today)
-        - High (Within the next couple days)
-        - Medium (Withing the week)
-        - Low (within the month)
-        - Backlog (no set duedate, use to keep track of ongoing tasks)
+      - Urgent (Needs to be done today)
+      - High (Within the next couple days)
+      - Medium (Withing the week)
+      - Low (within the month)
+      - Backlog (no set duedate, use to keep track of ongoing tasks)
     validations:
       required: true
    - type: dropdown
@@ -23,15 +23,16 @@ body:
       description: Please select the team that will be working on this issue
       multiple: true
       options:
-       - FP&A
-       - Expense Management
-       - Capital Management
-       - Investor Relations
-       - Product
-       - Business Insights
-       - Sigma
-       - Claims
-       - Ember
+        - Business Insights
+        - Capital Management
+        - Claims
+        - Ember
+        - Expense Management
+        - FP&A
+        - Investor Relations
+        - Product
+        - Production
+        - Sigma
     validation:
       required: true
   - type: dropdown
