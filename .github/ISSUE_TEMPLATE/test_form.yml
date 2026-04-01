@@ -4,9 +4,9 @@ assignees:
   - Dillon-DellAquila
 body:
   - type: dropdown
-    id: internal_external
+    id: priority
     attributes:
-      label: Did this request come from or is it for someone outside of the Finance team?
+      label: Select the priority of this issue
       multiple: false
       options:
         - Urgent (Needs to be done today)
