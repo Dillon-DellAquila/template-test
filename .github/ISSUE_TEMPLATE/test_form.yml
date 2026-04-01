@@ -1,12 +1,15 @@
-name: Issue Form
-description: Please fill out this form to submit an issue
+name: External Issue Form
+description: Please fill out this form to file an issue that was raised by an **external** staekholder.
+assignee: @Dillon-DellAquila
 body:
-  - type: input
-    id: duedate
+  - type: Dropdown
+    id: Priority
     attributes:
-      label: Due Date
-      description: Please enter your best estimate for when you expect/need this issue to be resolved.  <br /> _(Please enter in date format MM/DD/YYYY)_
-      placeholder: 12/31/9999
+    options:
+      - Urgent (Needs to be done today)
+      - High (Within the next couple days)
+      - Medium (Withing the month)
+      - Low (Can be added to backlog, no strict due date)
     validations:
       required: true
   - type: dropdown
