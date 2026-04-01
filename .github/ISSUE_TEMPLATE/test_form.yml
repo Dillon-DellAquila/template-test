@@ -16,16 +16,6 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: internal_external
-    attributes:
-      label: Did this request come from or is it for someone outside of the Finance team?
-      multiple: false
-      options:
-        - Yes (External Request)
-        - No (Internal Request)
-    validations:
-      required: true
-  - type: dropdown
     id: workstream
     attributes:
       label: Workstream
@@ -33,17 +23,16 @@ body:
       multiple: true
       options:
         - Agency
-        - Branch Claims Model
-        - Delphi
-        - Domo
+        - Claims
+        - Data
         - Ember
-        - Expense Forecasting
-        - Forecasting/Planning
+        - Excecutive
         - Investor Relations
-        - Metric Reporting
-        - Regulatory
-        - Sigma
-        - Other, please list in the next section
+        - Legal
+        - Marketing
+        - People Team
+        - Production
+        - Other
     validations:
       required: true
   - type: input
