@@ -14,7 +14,7 @@ body:
       - Medium (Withing the week)
       - Low (within the month)
       - Backlog (no set duedate, use to keep track of ongoing tasks)
-    validation:
+    validations:
       required: true
   - type: dropdown
     id: workstream_to
@@ -33,7 +33,7 @@ body:
         - Product
         - Production
         - Sigma
-    validation:
+    validations:
       required: true
   - type: dropdown
     id: workstream_from
