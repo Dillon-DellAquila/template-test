@@ -1,6 +1,6 @@
 name: External Issue Form
-description: **EXTERNAL** Please use this form if you are not part of the finance team.
-assignees: 
+description: "**EXTERNAL** Please use this form if you are not part of the finance team."
+assignees:
   - Dillon-DellAquila
 body:
   - type: dropdown
@@ -9,17 +9,18 @@ body:
       label: Select the priority of this issue
       multiple: false
       options:
-      - Urgent (Needs to be done today)
-      - High (Within the next couple days)
-      - Medium (Withing the week)
-      - Low (within the month)
-      - Backlog (no set duedate, use to keep track of ongoing tasks)
+        - Urgent (Needs to be done today)
+        - High (Within the next couple days)
+        - Medium (Within the week)
+        - Low (Within the month)
+        - Backlog (no set due date, use to keep track of ongoing tasks)
     validations:
       required: true
+
   - type: dropdown
     id: workstream_to
     attributes:
-      label: Workstream
+      label: What Finance team will work on this?
       description: Please select the team that will be working on this issue
       multiple: true
       options:
@@ -33,12 +34,20 @@ body:
         - Product
         - Production
         - Sigma
+        - Other/Not sure
     validations:
       required: true
+
+  - type: input
+    id: workstream_to_other
+    attributes:
+      label: If you selected "Other/Not sure" above, please specify
+      description: _(Optional)_
+
   - type: dropdown
     id: workstream_from
     attributes:
-      label: Workstream
+      label: Requesting Workstream
       description: Please select which workstream is requesting this issue
       multiple: true
       options:
@@ -46,7 +55,7 @@ body:
         - Claims
         - Data
         - Ember
-        - Excecutive
+        - Executive
         - Investor Relations
         - Legal
         - Marketing
@@ -55,11 +64,13 @@ body:
         - Other
     validations:
       required: true
+
   - type: input
-    id: workstream_other
+    id: workstream_from_other
     attributes:
-      label: If selected Other, please add the type of issue
+      label: If you selected "Other" above, please specify your workstream
       description: _(Optional)_
+
   - type: dropdown
     id: type
     attributes:
@@ -73,11 +84,13 @@ body:
         - Other
     validations:
       required: true
+
   - type: input
     id: type_other
     attributes:
-      label: If selected Other, please add the type of issue
+      label: If you selected "Other" above, please specify the type of issue
       description: _(Optional)_
+
   - type: textarea
     id: description
     attributes:
@@ -85,11 +98,3 @@ body:
       placeholder: Please add a brief description of the work that needs to be done
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: >
-        <br />
-  - type: markdown
-    attributes:
-      value: >
-        **Please assign this issue to yourself or someone who will be working on the issue❗❗❗**
